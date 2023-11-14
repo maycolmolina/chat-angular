@@ -1,0 +1,30 @@
+<div class="container">
+    <div  class="row justify-content-center">
+        <div class="cajapublicaciones">
+            <div *ngIf="cargando==true" class="justify-content-center cargando  " >
+                <p style="color: white;  text-align: center;">cargando.....</p>
+            </div>
+            <div  class="cajasms" #bajara>
+                <div style="margin-right: 10px; margin-left: 10px;" class="row " [ngClass]="{'justify-content-end': publicar.token==mitoken, 'bb':publicar.token==mitoken}" *ngFor=" let publicar of publicacionesm">
+                    <div class="sms" [ngClass]="{'smp':publicar.token==mitoken}" >
+                        <span id="{{publicar.token}}" (dblclick)="verperfil($event)" *ngIf="publicar.token!=mitoken" class="spp">{{publicar.autor}}</span>
+                        <span *ngIf="publicar.token==mitoken"class="spp">Tú</span>
+                        <div class="texto">
+                            <p>{{publicar.texto}}</p>
+                        </div>
+                        <div class="text-end usuario">
+                            <span style="font-size: 0.9rem; color: rgb(255, 255, 255); font-weight: bold;">{{publicar.date | date:'dd-MM-YYYY HH:mm'}}</span>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            <div class="enviar">
+                <input #mensaje [(ngModel)]="cja" class="form-control inputsms" type="text">
+                <div (click)="setpublicacion()" class="boton"></div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+

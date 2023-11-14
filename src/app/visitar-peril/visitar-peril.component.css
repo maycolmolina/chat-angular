@@ -1,0 +1,147 @@
+.cargau{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+    font-size: 5rem;
+}
+.principal{
+    width: 100%;
+    min-height: 85vh;
+    background-color: rgb(90, 89, 89);
+}
+.contenedorperfil{
+    width: 800px;
+    border: rgb(255, 255, 255) solid;
+    margin: auto;
+    height: 250px;
+    position: relative;
+    background-image: url(./portada.jpg);
+    background-position: center ;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.magenperfil{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: calc(100% - 150px);
+    border-radius: 50%;
+    background-color: black;
+    border: solid 7px rgb(255, 255, 255);
+    left: calc(50% - 150px);
+    z-index: 2;
+}
+.datos{
+    font-style: italic;
+    width: 800px;
+    height: 300px;
+    margin: auto;
+    margin-top: 140px;
+    box-sizing: border-box;
+}
+.datos>span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nombre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(202, 203, 214);
+    text-shadow: 0px 0px 2px  black;
+    text-decoration: underline;
+}
+
+
+
+.aciones{
+    display: flex;
+    justify-content: flex-end;
+}
+.aciones button{
+    border: none;
+    margin: 0px 0px 0px 10px;
+    padding: 4px;
+    transition: ease all 0.3s;
+    border-radius: 8px;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #0df
+    );
+    display: flex;
+    font-size: 10px;
+    cursor: pointer;
+}
+.aciones button span{
+    color: #fff;
+    background-color: black;
+    padding: 4px 6px;
+    border-radius: inherit;
+    transition: ease all 0.3s;
+    font-size: 1.2rem;
+}
+.aciones button .llamar{
+    background-color: rgb(38, 128, 38);
+}
+.aciones button:hover span{
+    background-color: transparent;
+}
+.aciones button:active{
+    transform: scale(0.8);
+}
+.atributos{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px  black;
+}
+
+@media screen and (max-width:880px) {
+    .contenedorperfil{
+        width: 90%;
+        height: 250px;
+        
+    }
+    .datos{
+        width: 90%;
+        
+    }
+    .datos>span{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .contenedorperfil{
+        width: 95%;
+        height: 180px;
+    }
+    .datos{
+        width: 90%;
+        
+    }
+    .datos>span{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .magenperfil{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: calc(100% - 100px);
+        border-radius: 50%;
+        background-color: black;
+        border: solid 4px rgb(255, 255, 255);
+        left: calc(50% - 100px);
+        z-index: 2;
+    }
+    .aciones button{
+        font-size: 5px;
+    }
+}

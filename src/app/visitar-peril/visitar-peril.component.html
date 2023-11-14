@@ -1,0 +1,18 @@
+<div class="principal" *ngIf="mostrar">
+    <div  class="contenedorperfil">
+        <img class="magenperfil" src="{{urlImg}}" alt="">
+    </div>
+    <div class="datos">
+        <div class="nombre">{{usuarioActual.nombre}}</div><br class="quitar"><br>
+        <div class="aciones">
+            <button><span>enviar correo</span></button>
+            <button><span class="llamar">llamar</span></button>
+        </div>
+        <span class="correo">corréo electroníco: <span class="atributos">{{usuarioActual.correo}}</span></span><br>
+        <span class="apodo">apódo: <span class="atributos" >{{usuarioActual.apodo}}</span></span><br>
+        <span class="telefono">teléfono: <span class="atributos">en proceso..</span></span><br>
+    </div>
+</div>
+
+
+<p class="cargau" *ngIf="!mostrar"><span>cargando...</span></p>

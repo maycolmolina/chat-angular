@@ -1,0 +1,45 @@
+<!-- <div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary " style="color: aliceblue;">Inicio de Sesión</div>
+                <div class="card-body">
+                    <form #formlog="ngForm" (ngSubmit)="entrar(formlog)">
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label">Usuario</label>
+                            <input name="usuario"type="text" class="form-control" id="usuario" placeholder="Ingrese su usuario" ngModel>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contrasena" class="form-label">Contraseña</label>
+                            <input name="contrasena" type="password" class="form-control" id="contrasena" placeholder="Ingrese su contraseña" ngModel>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="recordar">
+                            <label class="form-check-label" for="recordar">Recordar mi usuario</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="targeta">
+    <form #formlog="ngForm" class="form" (ngSubmit)="entrar(formlog)">
+        <div class="mb-3 seccionesinput ">
+            <label for="usuario" class="form-label">Usuario</label>
+            <input name="usuario"type="text" class="form-control" id="usuario" placeholder="Ingrese su usuario" ngModel>
+        </div>
+        <div class="mb-3 seccionesinput ">
+            <label for="contrasena" class="form-label">Contraseña</label>
+            <input name="contrasena" type="password" class="form-control" id="contrasena" placeholder="Ingrese su contraseña" ngModel>
+        </div>
+        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        no tienes una cuenta?
+        <div class="centrar">
+            <button class="crear" style="background-color: black;" (click)="ir('crearusuario')">crear +</button>
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,15 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.com{
+    background-color: aquamarine;
+    margin: 5px;
+    box-shadow: 0px 0px 7px black;
+    border-radius: 5px;
+}
+.cjac{
+    overflow-y: scroll;
+    height: 357px;
+}

@@ -1,0 +1,192 @@
+.cajapublicaciones{
+    border: solid rgb(117, 112, 112) 1px;
+    background-image: url('assett/img/technology-binary-number-programming-wallpaper-3840x2160_54.jpg');
+    background-color: rgb(128, 128, 128,0.4);
+    background-size: cover;
+    width: 98%;
+    height: 80vh;
+    margin: 10px ;
+    position: relative;
+    border-radius: 10px;
+}
+.cargando{
+    margin-top: 50px;
+    border-radius: 5px;
+    font-size: 1.2rem ;
+    font-weight: bold;
+}
+.cargando p{
+    text-shadow: 1px 1px 5px white;
+}
+.enviar{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    /* border: solid black ; */
+}
+.inputsms{
+
+    margin: 5px;
+    width: 93%;
+}
+.boton{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px 5px 5px 0px;
+  /* border: solid white 1px; */
+  background-image: url(assett/img/iconoenviar.png);
+  background-size: cover;
+}
+.boton:active{
+    transform: scale(0.6);
+}
+
+
+/* estilos para la caja de mensajes */
+.cajasms{
+    margin: 3px;
+    height: 87%;
+    width: 100%;
+    padding: 5px;
+    overflow-y: auto ;
+}
+.sms{
+    color: rgb(255, 255, 255);
+    width: 60%;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba(47, 13, 241, 0.5);
+    border: solid white 1px;
+    font-weight: bold;
+    margin: 4px 0px 6px 0px;
+    
+}
+
+.texto{
+    width: auto;
+}
+.bb .sms{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+}
+.bb .sms span{
+    color: rgb(245, 12, 24);
+}
+.smp{
+    color: rgb(204, 202, 202);
+    /* border:black 1px solid; */
+    width: 60%;
+    padding: 10px;
+    border-radius: 6px;
+    /* background-color: rgb(7, 7, 7); */
+    margin: 4px 0px 6px 0px;
+    
+    font-weight: bold;
+}
+
+.spp{
+    color: aqua;
+    font-weight: normal;
+    position: relative;
+    transition: ease 0.3s all;
+    overflow: hidden;
+}
+.spp::after{
+    content:'has doble click para visitar perfil';
+    height: auto;
+    width: 150px;
+    font-size: 0.7rem;
+    border: solid rgb(255, 255, 255) 1px;
+    position: absolute;
+    left: 100%;
+    bottom: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.699);
+    border-radius: 5px;
+    color: white;
+    transition: ease 0.3s all;
+    opacity: 0;
+}
+.spp:hover::after{
+    opacity: 1;
+}
+.spp:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+/* Estilo para el scrollbar */
+/* Cambia los colores y estilos según tus preferencias */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+  }
+  
+  /* Estilo para el thumb (la parte móvil del scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #dddada; /* Color de fondo del thumb */
+    border-radius: 6px; /* Radio de esquina del thumb */
+  }
+  
+  /* Estilo para el track (la parte no móvil del scrollbar) */
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Color de fondo del track */
+    border-radius: 6px; /* Radio de esquina del track */
+  }
+  
+  /* Estilo para el corner (la esquina del scrollbar) */
+  ::-webkit-scrollbar-corner {
+    background-color: white; /* Color de fondo de la esquina */
+  }
+
+  @media screen and (max-width:710px) {
+    .cajapublicaciones{
+        border: solid rgb(117, 112, 112) 1px;
+        /* background-color: rgb(83, 88, 88); */
+        background-image: url(assett/img/fondochat.jpg);
+        background-size: cover;
+        width: 98%;
+        height: 80vh;
+        margin: 10px ;
+        position: relative;
+        border-radius: 10px;
+    }
+    .sms{
+        color: rgb(204, 202, 202);
+        width: 60%;
+        padding: 5px;
+        border-radius: 6px;
+        background-color: transparent;
+        margin: 4px 0px 6px 0px;
+        border: 1px solid white;
+        font-weight: bold;
+    }
+    
+    .inputsms{
+
+        margin: 5px;
+        
+    }
+    /* .boton{
+        width: 28%;
+        margin: 5px;
+    } */
+    .bb .sms{
+        background-color: rgba(25, 104, 9, 0.5);
+        color: rgb(228, 231, 54);
+    }
+    .bb .sms span{
+        color: rgb(240, 240, 255);
+        font-weight: normal;
+    }
+    .spp{
+        font-weight: normal;
+    }
+
+}

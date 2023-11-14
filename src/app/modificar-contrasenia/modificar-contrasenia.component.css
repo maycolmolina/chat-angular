@@ -1,0 +1,97 @@
+.flex{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    /* border: solid black 1px; */
+}
+.cont-btn{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* border: solid red 1px; */
+}
+.btn{
+    border-radius: 0;
+    background-color: rgb(82, 85, 85);
+    color: white;
+}
+.cont-btn button{
+    font-size: 1.4rem;
+    width: 300px;
+    box-shadow: 0px 0px 5px black;
+}
+.contaner{
+    box-shadow: 0px 0px 10px 0px rgb(119, 111, 111);
+    padding: 10px;
+    border-radius: 3px;
+    margin: 20px;
+}
+.mostrarform{
+    border: solid rgb(158, 158, 158) 1px;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 90%;
+}
+.mostrarform .img{
+    width: 400px;
+    height: 400px;
+    background-image: url(../ajustes/icons/contrasenia.png);
+    background-size: cover;
+}
+
+@media screen and (max-width:798px) {
+    .cont-btn button{
+        width: 200px;
+    }
+    .mostrarform .img{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:688px) {
+    .flex{
+        flex-direction: column;
+    }
+    .cont-btn button{
+        font-size: 1.1rem;
+        width: 150px;
+    }
+    .cont-btn{
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+    .btn{
+        margin-right: 10px;
+        
+    }
+    
+    .cont-btn p{
+        display: none;
+    }
+    .mostrarform{
+        height: auto;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:535px) {
+    .cont-btn button{
+        font-size: 1rem;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .mostrarform .img{
+        width: 200px;
+        height: 200px;
+    }
+    .row .btn{
+        width: auto;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,19 @@
+<div class="cabecera">
+    <div class="navegador">
+        <h1>@molina_(app)</h1>
+        <div class="contnav">
+            <div class="navega">
+                <ul class="listaopciones">
+                    <li (click)="ir('perfil')">perfil</li>
+                    <li (click)="ir('mensajes')">mensajes</li>
+                    <li (click)="ir('ajustes')">ajustes</li>
+                    <li (click)="ir('preguntas')">informacion</li>
+                    <li (click)="ir('publicaciones')">chat_grupal</li>
+                    <li *ngIf="!estaloguado()" (click)="ir('login')">login</li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+</div>
+

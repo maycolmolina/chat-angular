@@ -1,0 +1,34 @@
+<div class="contaner    ">
+    
+    <h3 class="text-center">seguro que deseas cambiar la contraseña de seguridad?</h3>
+    <div class="flex">
+        <div class="cont-btn">
+            <button *ngIf="!cambiar"  (click)="cambiar_estado()" class="btn ">cambiar</button><br><br>
+            <button (click)="ir('ajustes')"  class="btn ">cancelar</button><br>
+            <p>si deseas cambiar click en "cambiar" o  click en "cancelar" para volver a ajustes</p>
+        </div>
+        <div *ngIf="!cambiar"  class="mostrarform" >
+            <div class="img"></div>
+        </div>
+        <div *ngIf="cambiar==true" class="mostrarform" >
+            <form class="form" action="">
+                <div>
+                    <p class="form-text" >confirma tu contraseña:</p>
+                    <input #actual   class="form-control" type="text">
+                </div>
+                <div>
+                    <p class="form-text">ingresa la nueva contraseña</p>
+                    <input #nueva     class="form-control" type="text">
+                </div>
+                <div>
+                    <p class="form-text">repite tu nueva contraseña</p>
+                    <input #confirmar  class="form-control" type="text">
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <input #cambiar (click)="cambiarCon(actual.value,nueva.value,confirmar.value)" style="width: 150px;box-shadow: 0px 0px 5px black; " class="btn " type="submit" value="cambiar">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

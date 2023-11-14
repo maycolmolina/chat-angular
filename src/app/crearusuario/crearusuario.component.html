@@ -1,0 +1,35 @@
+<br><br><br>
+<div class="cardcon">
+    <div class="target">
+        <div class="cabecera-target">
+            <span class="cabecera">nuevo usuario</span>
+        </div>
+        <form class="formulario" #miform="ngForm" (ngSubmit)="agregarusu(miform)" >
+            <div>
+                <div>
+                    <label for="">nombre</label>
+                    <input class="form-control"name="nombre" type="text" required ngModel >
+                </div>
+                <div>
+                    <label for="">correo</label>
+                    <input class="form-control" name="correo" type="text" required ngModel>
+                </div>
+                <div>
+                    <label for="">contraseña</label>
+                    <input class="form-control"name="contrasenia" type="text" required ngModel>
+                </div>
+                <div>
+                    <label for="">apodo</label>
+                    <input class="form-control"name="apodo" type="text" require ngModel>
+                </div>
+                <div class="row justify-content-center">
+                    
+                    <button class="boton miboton" style="width: auto; margin-top: 10px;" type="submit"><span>crear cuenta+</span></button>
+
+                </div>
+            </div>
+        
+        </form>
+    </div>
+    
+</div>

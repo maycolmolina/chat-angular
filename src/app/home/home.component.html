@@ -1,0 +1,18 @@
+<div class="contenedor" >
+    <div (click)="ir('subirfoto')" [ngStyle]="{'background-image':direccionimg}" class="perfilfoto"></div>
+    
+    <div class="ficha_usuario" *ngIf="persona.nombre!=''">
+        <p>NOMBRE: {{persona.nombre}}</p>
+        <p>APODO: {{persona.apodo}}</p>
+        <p>CORREO: {{persona.correo}}</p>
+    </div>
+
+    <div style="margin: 10px;">
+        <div class="nologin" *ngIf="persona.nombre==''"><span>!inicia la seccion</span></div>
+        <a routerLink="../crearusuario" class=" nologin ir" *ngIf="persona.nombre==''"><span>crear mi usuario</span></a>
+        <a routerLink="../login" class=" nologin ir" *ngIf="persona.nombre==''"><span>login</span></a>
+    </div>
+
+
+</div>
+

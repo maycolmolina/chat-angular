@@ -1,0 +1,29 @@
+<br><br><br>
+<body>
+  <div class="container">
+    <div class="background-image"></div>
+    <div class="form-container">
+      <h2>realizar cambios</h2>
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input [(ngModel)]="nombreusuario" type="text" id="nombre" name="nombreamodi" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+          <label for="apodo">Apodo:</label>
+          <input [(ngModel)]="apodousuario" type="text" id="apodo" name="apodoamodi" placeholder="Apodo">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input [(ngModel)]="emailusuario" type="email" id="email" name="emailamodi" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="contrasena">Confirma tu Contraseña para realizar los cambios:</label>
+          <input [(ngModel)]="contrasenia" type="password" id="contrasenap" name="contrasenaamodi" placeholder="Contraseña">
+        </div>
+        <button #btnupdate (click)="cambiar()" type="submit">modificar</button>
+      </form>
+    </div>
+  </div>
+</body>
+

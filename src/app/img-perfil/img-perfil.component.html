@@ -1,0 +1,10 @@
+<div class="contenido">
+    <div class="imagenActual">
+        <p style="font-size: 1.2rem; font-weight: bold;color: aliceblue;">deseas cambiar la imagen</p>
+        <img #mifoto class="fotoPerfil" src="./5087579.png" alt="">
+        <div class="fun">
+            <input (change)="cargarImagen($event)" accept="image/*" type="file" name="" id="">
+            <button #enviar (click)="mandarImg()" class="btn btn-primary" >actualizar</button>
+        </div>
+    </div>
+</div>
